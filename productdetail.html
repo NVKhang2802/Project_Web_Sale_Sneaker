@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/productdetail.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <a href="Cart.html">
+        <div class="_cart d-md-none">
+            <i class="bi bi-bag fs-4 text-white"></i>
+        </div>
+    </a>
+    <div class="container-full">
+        <nav class="navbar navbar-expand-sm navbar-dark col-md-12 bg-page">
+            <div class="container-fluid">
+                <img src="assets/img/LOGo32.png" alt="Logo" width="50px" class="navbar-brand">
+                <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon d-flex align-items-center"><i class="bi bi-list text-black fs-2"></i></span>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="Nike.html">NIKE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">ADIDAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">JORDAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">YEEZY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">PUMA</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <form class="d-flex search-bar me-3 gap-2">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <button class="btn btn-outline-primary" type="button">Search</button>
+                        </form>
+                        <div id="cart-icon">
+                            <a href="./Cart.html" class="d-flex align-items-center">
+                                <i class="bi bi-bag fs-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container bg-page my-4">
+        <div class="product">
+            <div class="img-product">
+                <div class="dot-container">
+                    <!--image gallery -->
+                </div>
+                <div class="SlideShow-Container">
+                    <img class="main-product-img" src="assets/img/A'ONE4.avif" alt="product 1">
+                    <div class="prev-btn" onclick="prevSlide()">
+                        <i class="bi bi-chevron-left text-black"></i>
+                    </div>
+                    <div class="next-btn" onclick="nextSlide()">
+                        <i class="bi bi-chevron-right text-black"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Thông tin sản phẩm-->
+            <div class="infor-product">
+                <h5 id="name">AIR MAX 1 PURE PLATINUM</h5>
+                <div style="display: flex; height: 24px; margin-bottom: 20px;">
+                    <div class="star">
+                        <div class="total-star checked">5.0</div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div style="border: 1px solid grey; margin-left: 10px;"></div>
+                    <div class="rate">
+                        <div class="total-rate">21 Đánh giá</div>
+                    </div>
+                    <div style="border: 1px solid grey; margin-left: 10px;"></div>
+                    <div style="margin-left: 10px;">
+                        <div class="sales">52 Đã mua</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div style="color: red;">
+                        <p class="mb-0 fs-4 "><span id="price-product">2.500.000</span> <span>đ</span></p>
+                    </div>
+                    <del class="ms-2 fs-5" style="color: #929292;">2.700.000 đ</del>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div>Giảm tận 200.000 đ</div>
+                    <div style="display: flex; justify-content: center; align-items: center; margin-left: 20px; width: 80px; height: 20px; font-weight: bold; background-color: red; color: white;">Giảm 7%</div>
+                </div>
+
+                <!--Chọn màu-->
+                <div style="display: flex; margin-top: 10px; padding: 5px 0;">
+                    <div>Màu sắc: </div>
+                    <div id="color-description" style="margin-left: 5px; color: red;"></div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div class="color-choice" data-color="Trắng" style="background-color: #FFF; border: 1px solid black;"></div>
+                    <div class="color-choice" data-color="Đen" style="background-color: #000; border: 1px solid black;"></div>
+                </div>
+
+                <!--Chọn size-->
+                <div style="display: flex; margin-top: 10px; padding: 5px 0;">
+                    <div>Kích thước: </div>
+                    <div id="size-description" style="margin-left: 5px; color: red;"></div>
+                </div>
+                <button class="size-choice" data-size="35">35</button>
+                <button class="size-choice" data-size="36">36</button>
+                <button class="size-choice" data-size="37">37</button>
+                <button class="size-choice" data-size="38">38</button>
+                <button class="size-choice" data-size="39">39</button>
+                <button class="size-choice" data-size="40">40</button>
+                <button class="size-choice" data-size="41">41</button>
+                <button class="size-choice" data-size="42">42</button>
+                
+                <div class="quantity my-4">
+                    <div style="margin-right: 20px;">Số lượng</div>
+                    <div class="cart-item text-center col-md-2">
+                        <button class="btn-quantity" id="btn-minus">-</button>
+                        <input placeholder="0" type="text" class="quantity-input" id="quantity-input" value="0" readonly>
+                        <button class="btn-quantity" id="btn-plus">+</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2 ">
+                    <button class="buy-btn">Mua ngay</button>
+                    <button class="add-to-cart-btn" id="add-to-cart">
+                        <i class="fa fa-shopping-cart" style="margin-right: 5px;"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-page">
+        <div class="item-detail">
+            <h2 class="section-title">CHI TIẾT SẢN PHẨM</h2>
+            <div class="detail-grid">
+                <div>Chất liệu:</div><div><strong>Canvas</strong></div>
+                <div>Chiều cao cổ giày:</div><div><strong>Cổ thấp</strong></div>
+                <div>Số lượng hàng khuyến mãi:</div><div><strong>249</strong></div>
+                <div>Số sản phẩm còn lại:</div><div><strong>48,651</strong></div>
+                <div>Gửi từ:</div><div><strong>TP.HCM</strong></div>
+            </div>
+        </div>
+        <div class="item-infor">
+            <h2 class="section-title">MÔ TẢ SẢN PHẨM</h2>
+            <div class="product-description">
+                <p><i class="bi bi-check2"></i> Đủ size Nam nữ: 35 - 42</p>
+                <p><i class="bi bi-check2"></i> Hàng thật 100% như hình – giá cực cạnh tranh</p>
+                <p><i class="bi bi-check2"></i> Hot trend, phù hợp cả học sinh – sinh viên – người đi làm</p>
+                <p><i class="bi bi-check2"></i> Nhẹ, êm, thoáng – đế cao su chống trượt, tăng chiều cao nhẹ</p>
+                <p><i class="bi bi-check2"></i> Dễ phối đồ – hợp với jeans, sooc, váy, mọi mùa từ đông sang hè</p>
+                <p><i class="bi bi-check2"></i> Giao hàng toàn quốc – kiểm tra hàng trước khi thanh toán</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer bg-black text-white" style="padding: 32px 0;">
+        <div class="container row px-4 mx-auto">
+            <!-- Cột 1: Logo + Liên hệ -->
+            <div class="col-md-4 mb-4">
+                <img src="assets/img/LOGo32.png" alt="logo" width="120" class="mb-2 rounded-circle">
+                <h4 class="mb-2">THÔNG TIN LIÊN HỆ</h4>
+                <p class="small mb-1">192/2 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP.HCM</p>
+                <p class="small mb-1">Hotline bán hàng: 0487.529.999 - 0919.581.455</p>
+                <p class="small">CSKH: 0988.666.444</p>
+            </div>
+
+            <!-- Cột 2: Hỗ trợ & Chính sách -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex flex-column gap-3">
+                    <div>
+                        <h5>HỖ TRỢ</h5>
+                        <a href="#" class="d-block text-decoration-none small">Chăm sóc khách hàng</a>
+                        <a href="#" class="d-block text-decoration-none small">Thanh toán</a>
+                        <a href="#" class="d-block text-decoration-none small">Hướng dẫn mua hàng</a>
+                    </div>
+                    <div>
+                        <h5>CHÍNH SÁCH</h5>
+                        <a href="#" class="d-block text-decoration-none small">Bảo hành</a>
+                        <a href="#" class="d-block text-decoration-none small">Đổi trả</a>
+                        <a href="#" class="d-block text-decoration-none small">Bảo mật thông tin</a>
+                        <a href="#" class="d-block text-decoration-none small">Giao nhận</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột 3: Mạng xã hội + Đăng ký KD -->
+            <div class="col-md-4 mb-4">
+                <h5>MẠNG XÃ HỘI</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <a href="mailto:shoesstore@gmail.com" class="small text-decoration-none">Email</a>
+                    <a href="https://x.com/Nike" class="small text-decoration-none">Twitter</a>
+                    <a href="https://instagram.com/nike" class="small text-decoration-none">Instagram</a>
+                    <a href="https://facebook.com/nike" class="small text-decoration-none">Facebook</a>
+                    <a href="https://www.youtube.com/nike" class="small text-decoration-none">Youtube</a>
+                    <a href="https://www.tiktok.com/@nike" class="small text-decoration-none">TikTok</a>
+                </div>
+
+                <p class="small mb-2">
+                    Số ĐKKD: 41N8041309 cấp ngày 17/08/2018 tại UBND Q.Tân Bình.
+                </p>
+                <img src="assets/img/BCT.png" alt="Chứng nhận" width="160">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/productdetail.js"></script>
+</body>
+</html>

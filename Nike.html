@@ -1,0 +1,365 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nike.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <style>
+        /* #lang-select {
+            width: 300px;
+            height: 40px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        .timgiangay {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: #183153;
+            font-family: "Montserrat", sans-serif;
+            box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .timgiangay:after {
+            content: " ";
+            width: 0%;
+            height: 100%;
+            background: #ffd401;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
+            right: 0;
+        }
+
+        .timgiangay:hover::after {
+            right: auto;
+            left: 0;
+            width: 100%;
+        }
+
+        .timgiangay span {
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            padding: 18px 25px;
+            color: #fff;
+            font-size: 1.125em;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            z-index: 20;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .timgiangay:hover span {
+            color: #183153;
+            animation: scaleUp 0.3s ease-in-out;
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.95);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+    <a href="Cart.html">
+        <div class="_cart d-md-none">
+            <i class="bi bi-bag fs-4 text-white"></i>
+        </div>
+    </a>
+    <div class="container-full">
+        <nav class="navbar navbar-expand-sm navbar-dark col-md-12 bg-white">
+            <div class="container-fluid">
+                <img src="/assets/img/LOGo32.png" alt="Logo" width="50px" class="navbar-brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon d-flex align-items-center"><i class="bi bi-list text-black fs-2"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="../index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="javascript:void(0)">NIKE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">ADIDAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">JORDAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">YEEZY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="javascript:void(0)">PUMA</a>
+                        </li>
+                    </ul>
+                    <a class="d-none d-md-flex gap-2 align-items-center text-decoration-none text-black" href="Cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd" class=""><g><path d="M14.519 13.5h-2.657a3.5 3.5 0 0 0-3.491 3.251l-1.714 24a3.5 3.5 0 0 0 3.491 3.749h27.704a3.502 3.502 0 0 0 3.491-3.749l-1.714-24a3.5 3.5 0 0 0-3.491-3.251H33.5V13A9.5 9.5 0 0 0 24 3.5c-5.055 0-9.727 4.026-9.5 9.5l.019.5zm18.981 3V24a1.5 1.5 0 0 1-3 0v-7.5h-13V24a1.5 1.5 0 0 1-3 0s.13-3.505.087-7.5h-2.725a.5.5 0 0 0-.498.464l-1.715 24a.5.5 0 0 0 .499.536h27.704a.502.502 0 0 0 .499-.536l-1.715-24a.5.5 0 0 0-.498-.464zm-3-3V13a6.5 6.5 0 1 0-13 0v.5z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                        <p class="mb-0 align-self-center">Giỏ hàng</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="">
+            <div style="background-color: rgb(184, 188, 192);">
+                <div class="p-2">
+                    <!-- <i class="bi bi-house"></i> -->
+                    <a href="./index.html" class="text-decoration-none text-black"> TRANG CHỦ</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a>NIKE</a>
+                </div>
+            </div>
+            <div class="main bg-white">
+                <div class="d-flex flex-column flex-md-row gap-4 px-2 px-md-4 py-4 ">
+                    <div class="w-100 w-md-75 pe-md-0">
+                        <div class="filter-bar mb-4 px-2">
+                            <div>
+                                <!--  -->
+                            </div>
+                            <div class="search-bar-container">
+                                <input class="search-bar__input" type="text" placeholder="Tìm kiếm">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 612.01 612.01" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M606.209 578.714 448.198 423.228C489.576 378.272 515 318.817 515 253.393 514.98 113.439 399.704 0 257.493 0S.006 113.439.006 253.393s115.276 253.393 257.487 253.393c61.445 0 117.801-21.253 162.068-56.586l158.624 156.099c7.729 7.614 20.277 7.614 28.006 0a19.291 19.291 0 0 0 .018-27.585zM257.493 467.8c-120.326 0-217.869-95.993-217.869-214.407S137.167 38.986 257.493 38.986c120.327 0 217.869 95.993 217.869 214.407S377.82 467.8 257.493 467.8z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                            </div>
+                        </div>
+                        <div class="shoes-list ">
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <img class="card-image" src="../assets/img/giaynike1.jpg" alt="">
+                                <div class="card-details">
+                                    <p class="card-title">AIR MAX 1 PURE PLATINUM</p>
+                                    <p class="card-price">2.500.000 đ</p>
+                                </div>
+                                <a href="./productdetail.html">
+                                    <button class="card-button">More info</button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="w-md-25 right-section">
+                        <img src="../assets/img/bannersale.jpeg" alt="" style="height: 200px; width: 100%;">
+                        <hr>
+                        <div class="news-section">
+                            <h3 class="news-title">TIN TỨC MỚI</h3>
+                            <div class="news-item d-flex mt-3">
+                                <img src="../assets/img/tt1.png" alt="" class="news-thumbnail">
+                                <div class="news-content">
+                                    <a class="news-link">Ở TPHCM, Mua Giày ADIDAS, NIKE Chính Hãng Thì Nên Mua Ở Đâu? Đến BAHAI Fashion Ngay</a>
+                                    <p class="news-date">24/08/2024 - 8:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="news-item d-flex mt-3">
+                                <img src="../assets/img/tt1.png" alt="" class="news-thumbnail">
+                                <div class="news-content">
+                                    <a class="news-link">Ở TPHCM, Mua Giày ADIDAS, NIKE Chính Hãng Thì Nên Mua Ở Đâu? Đến BAHAI Fashion Ngay</a>
+                                    <p class="news-date">24/08/2024 - 8:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="product-new-section">
+                            <h3 class="section-title">SẢN PHẨM MỚI</h3>
+                            <div class="product-new-item d-flex mt-3">
+                                <img src="../assets/img/giaynike2.jpeg" alt="Nike Airfort One" class="product-thumbnail">
+                                <div class="product-info">
+                                    <a class="product-name">GIÀY NIKE AIRFORT ONE WHITE NEW 2022</a>
+                                    <div class="product-rating text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <p class="product-price">4.500.000 đ</p>
+                                </div>
+                            </div>
+
+                            <div class="product-new-item d-flex mt-3">
+                                <img src="../assets/img/giaynike2.jpeg" alt="Nike Airfort One" class="product-thumbnail">
+                                <div class="product-info">
+                                    <a class="product-name">GIÀY NIKE AIRFORT ONE WHITE NEW 2022</a>
+                                    <div class="product-rating text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="product-price">4.500.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="category-section mt-3">
+                            <h3 class="section-title">DANH MỤC</h3>
+                            <div class="category-list d-flex flex-wrap gap-2">
+                                <p class="category-item">Dây Giày</p>
+                                <p class="category-item">Other Brands</p>
+                                <p class="category-item">Jordan</p>
+                                <p class="category-item">Yeezy</p>
+                                <p class="category-item">Nike</p>
+                                <p class="category-item">Adidas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-black text-white" style="padding: 32px 0;">
+        <div class="container row px-4 mx-auto">
+            <!-- Cột 1: Logo + Liên hệ -->
+            <div class="col-md-4 mb-4">
+                <img src="assets/img/LOGo32.png" alt="logo" width="120" class="mb-2 rounded-circle">
+                <h4 class="mb-2">THÔNG TIN LIÊN HỆ</h4>
+                <p class="small mb-1">192/2 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP.HCM</p>
+                <p class="small mb-1">Hotline bán hàng: 0487.529.999 - 0919.581.455</p>
+                <p class="small">CSKH: 0988.666.444</p>
+            </div>
+
+            <!-- Cột 2: Hỗ trợ & Chính sách -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex flex-column gap-3">
+                    <div>
+                        <h5>HỖ TRỢ</h5>
+                        <a href="#" class="d-block text-decoration-none small">Chăm sóc khách hàng</a>
+                        <a href="#" class="d-block text-decoration-none small">Thanh toán</a>
+                        <a href="#" class="d-block text-decoration-none small">Hướng dẫn mua hàng</a>
+                    </div>
+                    <div>
+                        <h5>CHÍNH SÁCH</h5>
+                        <a href="#" class="d-block text-decoration-none small">Bảo hành</a>
+                        <a href="#" class="d-block text-decoration-none small">Đổi trả</a>
+                        <a href="#" class="d-block text-decoration-none small">Bảo mật thông tin</a>
+                        <a href="#" class="d-block text-decoration-none small">Giao nhận</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột 3: Mạng xã hội + Đăng ký KD -->
+            <div class="col-md-4 mb-4">
+                <h5>MẠNG XÃ HỘI</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <a href="mailto:shoesstore@gmail.com" class="small text-decoration-none">Email</a>
+                    <a href="https://x.com/Nike" class="small text-decoration-none">Twitter</a>
+                    <a href="https://instagram.com/nike" class="small text-decoration-none">Instagram</a>
+                    <a href="https://facebook.com/nike" class="small text-decoration-none">Facebook</a>
+                    <a href="https://www.youtube.com/nike" class="small text-decoration-none">Youtube</a>
+                    <a href="https://www.tiktok.com/@nike" class="small text-decoration-none">TikTok</a>
+                </div>
+
+                <p class="small mb-2">
+                    Số ĐKKD: 41N8041309 cấp ngày 17/08/2018 tại UBND Q.Tân Bình.
+                </p>
+                <img src="assets/img/BCT.png" alt="Chứng nhận" width="160">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
